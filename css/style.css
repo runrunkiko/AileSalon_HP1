@@ -2,6 +2,30 @@
 *, *::before, *::after{ box-sizing: border-box; }
 /*  common
 --------------------------------*/
+body{
+}
+.ttl-wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+.ttl{
+    font-weight: bold;
+    font-size: 5vw;
+    background: transparent linear-gradient(54deg, #6CC6CBCB 0%, #C4C4C4 58%, #F2A681CB 100%) 0% 0% no-repeat padding-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
+.sub-ttl{
+    font-size: 2vw;
+    font-weight: bold;
+    color: #5A5A5A;
+    opacity: 0.8;
+    line-height: 2.5;
+}
+
 
 
 /*  loading
@@ -94,4 +118,101 @@ h1 > img{
     font-weight: bold;
     font-size: 1.54vw;
     color: #707070;
+}
+
+/*  fv-wrap
+--------------------------------*/
+.fv-wrap{
+    position: relative;
+}
+.fv-lead{
+    position: absolute;
+    width: 650px;
+    height: 200px;
+    padding: 45px 60px 45px 60px;
+    background: url(../img/fv-box.png) ;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    bottom: -100px;
+    right: 0;
+}
+.fv-lead p{
+    font-size: 33px;
+    color: #fff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+    line-height: 1.72;
+}
+.CTA1{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.article-wrap{
+    margin-top: 220px;
+}
+.article-wrap > p{
+    line-height: 2.17;
+    text-align: center;
+    display: block;
+    margin-bottom: 35px;
+}
+.dog1{
+    text-align: center;
+    margin: 80px 0 50px 0;
+}
+
+/*  article-wrap
+--------------------------------*/
+
+/* スクロールアニメーション */
+.scroll-wrap{
+    position: relative;
+    margin-top: 130px;
+}
+.scrolldown{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    height: 50px;
+}
+.scrolldown span{
+    /*描画位置*/
+  position: absolute;
+  left:-15px;
+  top: -15px;
+    /*テキストの形状*/
+  color: #000;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+.scrolldown::after{
+  content: "";
+    /*描画位置*/
+  position: absolute;
+  top: 0;
+    /*線の形状*/
+  width: 1px;
+  height: 30px;
+  background: #000;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
 }
