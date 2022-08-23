@@ -269,7 +269,7 @@ h1 > img{
     height: 761px;
     top: 1900px;
     right: 50px;
-    z-index: -1;
+    z-index: -4;
 }
 
 /* aboutList */
@@ -309,4 +309,47 @@ h2{
 }
 .aboutList .box:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+/*  course-area
+--------------------------------*/
+.course-list{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% auto;
+}
+.course-box{
+    width: 35vw;
+    height: 32vw;
+    border-radius: 27px;
+    border: 1px solid #707070;
+    box-shadow: 15px 15px 2px 1px rgba(238, 177, 147);
+    margin: 5% auto;
+    text-align: center;
+    padding: 5% 4%;
+}
+h3{
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: #6888AB;
+    margin-bottom: 5%;
+}
+.course-box > p{
+    line-height: 2.5;
+    font-size: 1.4vw;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.price{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #6888AB;
+}
+.course-area > p{
+    font-size: 1.5vw;
+    color: #6888AB;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5%;
 }
