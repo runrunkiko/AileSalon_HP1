@@ -11,3 +11,32 @@ $('#slideContents').slick({
   autoplay: true,
   autoplaySpeed: 2400,
 });
+
+//フォトギャラリー
+$('#photoContents').slick({
+  autoplay: true,
+  centerMode: true,
+  arrows: true,
+  centerPadding: '150px',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
