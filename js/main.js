@@ -9,7 +9,10 @@ $('#slideContents').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2300,
+  waitForAnimate: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
 });
 
 //フォトギャラリー
@@ -20,6 +23,9 @@ $('#photoContents').slick({
   centerPadding: '150px',
   slidesToShow: 1,
   autoplaySpeed: 2000,
+  waitForAnimate: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
   responsive: [
     {
       breakpoint: 768,
