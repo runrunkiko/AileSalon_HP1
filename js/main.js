@@ -40,3 +40,30 @@ $('#photoContents').slick({
     }
   ]
 });
+// ページ内遷移
+$(function(){
+    $('#areaNav a[href*="#"]').click(function(){
+        var headerHight = 150;
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top-headerHight;
+        $('body,html').animate({scrollTop: pos}, 800);
+        return false;
+        console.log('きたよ');
+    });
+});
+// ページ内遷移_CTA1
+$(function(){
+    $('.CTA1 a[href*="#"]').click(function(){
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop: pos}, 800);
+        return false;
+        console.log('きたよ');
+    });
+});
+//ページトップボタン
+$(function(){
+  $("h1").on("click", function(){
+    $("html, body").animate({scrollTop: 0 }, 800, "swing");
+  });
+});

@@ -28,15 +28,15 @@
             </div>
             <nav id="nav">
                 <div class="nav-wrap">
-                    <ul class="nav-list">
-                        <h1><img src="img/Aile_Logo.png" alt="Aile_Logo"></h1>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">COURSE</a></li>
-                        <li><a href="">PHOTO</a></li>
-                        <li><a href="">VOICE</a></li>
-                        <li><a href="">STAFF</a></li>
-                        <li><a href="">ACCESS</a></li>
-                        <li><a href="">RESERVATION</a></li>
+                    <ul class="nav-list" id="areaNav">
+                        <h1><a href="#"><img src="img/Aile_Logo.png" alt="Aile_Logo"></a></h1>
+                        <li><a class="nav1" href="#aboutArea">ABOUT</a></li>
+                        <li><a class="nav2" href="#courseArea">COURSE</a></li>
+                        <li><a class="nav3" href="#photoArea">PHOTO</a></li>
+                        <li><a class="nav4" href="#voiceArea">VOICE</a></li>
+                        <li><a class="nav5" href="#staffArea">STAFF</a></li>
+                        <li><a class="nav6" href="#accessArea">ACCESS</a></li>
+                        <li><a class="nav7" href="#reservationArea">RESERVATION</a></li>
                     </ul>
                 </div>
             </nav>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="fv-container">
                     <div class="fv-box">
-                        <div class="CTA1"><a href="https://coubic.com/aile-pbs/booking_pages#pageContent"><img src="img/cta_btn.png" alt="CTAボタン1"></a></div>
+                        <div class="CTA1"><a href="#reservationArea"><img src="img/cta_btn.png" alt="CTAボタン1"></a></div>
                     </div>
                 </div>
             </section>
@@ -68,7 +68,7 @@
                 <div class="scrolldown"><span>Scroll</span></div>
             </div>
         </hedaer>
-        <section class="about-area">
+        <section class="about-area" id="aboutArea">
             <div class="ttl-wrap">
                 <span class="ttl">ABOUT</span>
                 <p class="sub-ttl">AILEについて</p>
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="course-area">
+        <section class="course-area" id="courseArea">
             <div class="ttl-wrap">
                 <span class="ttl">COURSE</span>
                 <p class="sub-ttl">コースについて</p>
@@ -146,7 +146,7 @@
             </div>
             <p>他にも豊富な組み合わせのコースをご用意しておりますので、お気軽にご相談ください。</p>
         </section>
-        <section class="photo-area">
+        <section class="photo-area" id="photoArea">
             <div class="ttl-wrap">
                 <span class="ttl">PHOTO</span>
                 <p class="sub-ttl">フォトギャラリー</p>
@@ -170,7 +170,7 @@
                 <div class="photo photo11"></div>
             </div>
         </section>
-        <section class="voice-area">
+        <section class="voice-area" id="voiceArea">
             <div class="ttl-wrap">
                 <span class="ttl">VOICE</span>
                 <p class="sub-ttl">お客さまの声</p>
@@ -181,7 +181,7 @@
                     <div class="voice voice2"><img src="img/voice2.png" alt="お客様の声2"></div>
                     <div class="voice voice3"><img src="img/voice3.png" alt="お客様の声3"></div>
                 </div>
-                <section class="staff-area">
+                <section class="staff-area" id="staffArea">
                     <div class="ttl-wrap">
                         <span class="ttl">STAFF</span>
                         <p class="sub-ttl">スタッフ</p>
@@ -242,7 +242,7 @@
                 </section>
             </div>
         </section>
-        <section class="access-area">
+        <section class="access-area" id="accessArea">
             <div class="ttl-wrap">
                 <span class="ttl">ACCESS</span>
                 <p class="sub-ttl">アクセス</p>
@@ -259,11 +259,25 @@
                 </div>
             </div>
         </section>
-
-
+        <section class="reservation-area" id="reservationArea">
+            <div class="ttl-wrap-reserve">
+                <span class="ttl-reserve">RESERVATION</span>
+                <p class="sub-ttl-reserve">予約する</p>
+            </div>
+            <div class="reservation-wrap">
+                <p>下記にてご予約・お問い合わせを受け付けております。<br>お気軽にご連絡ください。<br><span>※法人様向けのプランもお気軽にお問合せください。</span></p>
+                <div class="web-btn"><a href="https://coubic.com/aile-pbs/booking_pages#pageContent" target="_blank">WEB予約はこちら</a></div>
+                <div class="line-btn"><a href="https://page.line.me/063tgvvy?openQrModal=true" target="_blank">LINE予約はこちら</a></div>
+                <a href="https://www.instagram.com/aile_pbs/" target="_blank"><div class="instagram">
+                    <figure class="insta_icon"><img src="img/Instagram_icon.png" alt="Instagram_icon"></figure>
+                    <p>Instagram</p>
+                </div></a>
+            </div>
+            <footer>
+                <p class="Copyright">© 2022 AILE inc.</p>
+            </footer>
+        </section>
     </div>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>

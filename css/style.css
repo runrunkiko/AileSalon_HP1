@@ -2,13 +2,16 @@
 *, *::before, *::after{ box-sizing: border-box; }
 /*  common
 --------------------------------*/
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
 .wrap{
     overflow: hidden;
 }
 .ttl-wrap{
     width: 100%;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .ttl{
     font-weight: bold;
@@ -104,7 +107,7 @@
     background: #ffffff;
     box-shadow: 10px 10px 38px #d1d1d1,-10px -10px 38px #ffffff;
 }
-h1 > img{
+h1 img{
     width: 10vw;
 }
 .nav-list{
@@ -118,7 +121,15 @@ h1 > img{
     font-weight: bold;
     font-size: 1.54vw;
     color: #707070;
+    transition: .4s;
 }
+/* ホバー時 */
+.nav-list li a:hover {
+    background: transparent linear-gradient(41deg, #6CC6CBE5 0%, #EEB193E6 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 15%;
+    border-radius: 8px;
+    }
 
 /*  fv-wrap
 --------------------------------*/
@@ -223,6 +234,7 @@ h1 > img{
 --------------------------------*/
 .about-area{
     position: relative;
+    margin-top: 200px;
 }
 
 /* カラフルなブラー背景 */
@@ -628,20 +640,147 @@ h5{
 .map > iframe{
     border-radius: 20px;
 }
+.adress{
+    padding: 2% 0 2% 10%;
+    color: #707070;
+}
 .adress p{
     line-height: 1.5;
+    font-size: 1.4vw;
     padding: 2% 0;
+
 }
 .map-btn{
-    width: 80%;
+    width: 85%;
     border-radius: 41px;
     background: #61B7BD 0% 0% no-repeat padding-box;
     box-shadow: 10px 10px 10px #00000029;
     padding: 4% 1%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
+    width: 20vw;
+    font-size: 1.3vw;
 }
 .map-btn > a{
     text-decoration: none;
     color: #fff;
+}
+/*  reservation-area
+--------------------------------*/
+.reservation-area{
+    background: transparent linear-gradient(159deg, #6CC6CBBF 0%, #EEB1939B 100%) 0% 0% no-repeat padding-box;
+}
+.ttl-wrap-reserve{
+    width: 100%;
+    text-align: center;
+    padding: 4% 0;
+}
+.ttl-reserve{
+    font-weight: bold;
+    font-size: 5vw;
+    background: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
+.sub-ttl-reserve{
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+    line-height: 2.5;
+}
+.reservation-wrap{
+    background: #fff;
+    border-radius: 40px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5% 0;
+}
+.reservation-wrap > p{
+    color: #5A5A5A;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+.reservation-wrap span{
+    font-weight: normal;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insta_icon > img{
+    width: 80%;
+}
+.instagram > p{
+    margin-left: 1%;
+    color: #5A5A5A;
+    font-weight: bold;
+}
+.reservation-wrap a{
+    text-decoration: none;
+}
+.web-btn{
+    width: 100%;
+    border-radius: 50px;
+    background: #F7A47B 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 10px #00000029;
+    padding: 4% 4%;
+    text-align: center;
+    margin: 6% auto 6% auto;
+    width: 28vw;
+    font-size: 1.5vw;
+    transition: .2s;
+    border: solid 2px #F7A47B;
+}
+.web-btn > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.line-btn{
+    width: 100%;
+    border-radius: 50px;
+    background: #04A370 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 10px #00000029;
+    padding: 4% 4%;
+    text-align: center;
+    margin: 6% auto 6% auto;
+    width: 28vw;
+    font-size: 1.5vw;
+    border: solid 2px #04A370;
+    transition: .2s;
+
+}
+.line-btn> a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* ホバー時 */
+.web-btn:hover{
+    border: solid 2px #F7A47B;
+    background: #fff;
+    color: #F7A47B;
+}
+.web-btn:hover a{
+    color: #F7A47B;
+}
+.line-btn:hover{
+    border: solid 2px #04A370;
+    background: #fff;
+    color: #04A370;
+}
+.line-btn:hover a{
+    color: #04A370;
+}
+.Copyright{
+    text-align: right;
+    color: #fff;
+    font-size: 1.4vw;
+    padding: 5% 4% 5% 0;
 }
