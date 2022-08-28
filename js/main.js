@@ -19,6 +19,7 @@ $('#photoContents').slick({
   arrows: true,
   centerPadding: '150px',
   slidesToShow: 1,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 768,
