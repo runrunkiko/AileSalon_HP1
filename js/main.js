@@ -9,7 +9,7 @@ $('#slideContents').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2400,
+  autoplaySpeed: 2000,
 });
 
 //フォトギャラリー
