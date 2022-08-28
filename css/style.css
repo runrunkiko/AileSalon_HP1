@@ -2,7 +2,8 @@
 *, *::before, *::after{ box-sizing: border-box; }
 /*  common
 --------------------------------*/
-body{
+.wrap{
+    overflow: hidden;
 }
 .ttl-wrap{
     width: 100%;
@@ -46,6 +47,7 @@ body{
 /*  slideshow
 --------------------------------*/
 .slide{
+    width: 100%;
     margin: 150px 5px 0 5px;
     position: relative;
     z-index: -1;
@@ -121,6 +123,7 @@ h1 > img{
 /*  fv-wrap
 --------------------------------*/
 .fv-wrap{
+    /* display: none; */
     position: relative;
 }
 .fv-lead{
@@ -376,7 +379,7 @@ h3{
     position: absolute;
     background: #FDC5C5DD;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.4;
     filter: blur(70px);
     width: 500px;
     height: 500px;
@@ -388,10 +391,10 @@ h3{
     position: absolute;
     background: #DCE6FC;
     border-radius: 50%;
-    opacity: 0.6;
+    opacity: 0.4;
     filter: blur(50px);
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
     top: 450px;
     left: 100px;
     z-index: -4;
@@ -447,6 +450,10 @@ h3{
     background: url(../img/photo10.jpg) no-repeat center center;
     background-size: cover;
 }
+.photo11{
+    background: url(../img/photo11.jpg) no-repeat center center;
+    background-size: cover;
+}
 #photoContents > .slick-prev{
     left: 30px;
 }
@@ -475,4 +482,166 @@ h3{
     background: url(../img/arrow.png);
     background-size: contain;
     opacity: 1;
+}
+/*  voice-area
+--------------------------------*/
+.voice-staff-container{
+    background: transparent linear-gradient(180deg,#FFFFFF1C 5%, #EEB19333 15%, #F5BEA25D 23%, #FCE3D2A8 44%, #B1CDC05A 64%, #61B7BD55 100%) 0% 0% no-repeat padding-box;
+    padding: 5% 0 10% 0;
+}
+.voice1{
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.voice1 > img{
+    width: 100%;
+}
+.voice2{
+    width: 60%;
+    margin-left: auto;
+    margin-top: -6%;
+}
+.voice2 > img{
+    width: 100%;
+}
+.voice3{
+    width: 60%;
+    margin-left: 5%;
+    margin-top: -6%;
+}
+.voice3 > img{
+    width: 100%;
+}
+/*  staff-area
+--------------------------------*/
+.staff-area{
+    background: #fff;
+    width: 85%;
+    border-radius: 65px;
+    margin: 0 auto;
+    padding-bottom: 7%;
+}
+.staff-area > .ttl-wrap{
+    margin-top: 7%;
+    padding-top: 7%;
+}
+.staff-list{
+    width: 75%;
+    margin: 0 auto;
+}
+.staff{
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 0;
+}
+.staff-thumbnail figure{
+    width: 25vw;
+    height: auto;
+}
+.staff-thumbnail figure img{
+    width: 100%;
+}
+.staff-box p{
+    margin-top: 25%;
+    line-height: 2.2;
+    font-size: 1.4vw;
+}
+.staff-box p span{
+    font-size: 1vw;
+}
+.staff-box1{
+    position: relative;
+    width: 50%;
+}
+.staff-box1 > h4{
+    position: absolute;
+    width: 70%;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #BABABA 58%, #F2A681E5 100%) 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    padding: 4% 0;
+    font-size: 1.5vw;
+    top: 8%;
+    left: -30%;
+}
+.staff-box2{
+    position: relative;
+    width: 50%;
+}
+.staff-box2 > h4{
+    position: absolute;
+    width: 70%;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #BABABA 58%, #F2A681E5 100%) 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    padding: 4% 0;
+    font-size: 1.5vw;
+    top: 8%;
+    left: 60%;
+}
+.staff-box-pink h4{
+    background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #E0BDBD 58%, #E2B9B9 100%) 0% 0% no-repeat padding-box;
+}
+.staff:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* massage-wrap */
+.massage-wrap{
+    width: 85%;
+    margin: 7% auto 3% auto;
+}
+.massage_border{
+    width: 100%;
+    height: 7px;
+    background: #61B7BD;
+    margin-top: 5%;
+}
+h5{
+    padding: 6% 4%;
+    color: #61B7BD;
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+.massage p{
+    color: #707070;
+    font-size: 1.3vw;
+    padding: 2.5% 4%;
+    line-height: 2.1;
+    font-weight: bold;
+}
+/*  access-area
+--------------------------------*/
+.map-wrap{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5% 0 6% 0;
+    align-items: center;
+}
+.map > iframe{
+    border-radius: 20px;
+}
+.adress p{
+    line-height: 1.5;
+    padding: 2% 0;
+}
+.map-btn{
+    width: 80%;
+    border-radius: 41px;
+    background: #61B7BD 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 10px #00000029;
+    padding: 4% 1%;
+    text-align: center;
+    margin-top: 5%;
+}
+.map-btn > a{
+    text-decoration: none;
+    color: #fff;
 }
