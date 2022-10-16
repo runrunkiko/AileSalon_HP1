@@ -79,8 +79,10 @@ body{
 .slide3{
     width: 25%;
     height: 100vh;
-    background: url(../img/fv3.png) no-repeat center center;
+    background: url(../img/fv3_h.jpg) no-repeat center center;
     background-size: cover;
+    object-fit: cover;
+    object-position: 100% 100%;
 }
 .slide4{
     width: 50%;
@@ -303,6 +305,12 @@ h1 img{
     box-shadow: 0px 3px 6px #00000029;
     width: 90vw;
 }
+.box2 > .about-article{
+    padding: 4% 6% 4% 6%;
+}
+.box5 > .about-article{
+    padding: 4% 6% 4% 6%;
+}
 h2{
     font-size: 1.6vw;
     line-height: 2.2;
@@ -367,6 +375,13 @@ h3{
     font-weight: bold;
     text-align: right;
     padding-right: 5%;
+}
+.course-box5{
+    margin: 4% 12.5%;
+}
+.course-box5 > p{
+    line-height: 2;
+
 }
 
 /*  photo-area
@@ -439,7 +454,7 @@ h3{
     background-size: cover;
 }
 .photo5{
-    background: url(../img/photo5.jpg) no-repeat center center;
+    background: url(../img/photo5_new.jpg) no-repeat center center;
     background-size: cover;
 }
 .photo6{
@@ -451,7 +466,7 @@ h3{
     background-size: cover;
 }
 .photo8{
-    background: url(../img/photo8.jpg) no-repeat center center;
+    background: url(../img/photo8_new.jpg) no-repeat center center;
     background-size: cover;
 }
 .photo9{
@@ -463,7 +478,19 @@ h3{
     background-size: cover;
 }
 .photo11{
-    background: url(../img/photo11.jpg) no-repeat center center;
+    background: url(../img/photo11_new.jpg) no-repeat center center;
+    background-size: cover;
+}
+.photo12{
+    background: url(../img/photo12.jpg) no-repeat center center;
+    background-size: cover;
+}
+.photo13{
+    background: url(../img/photo13.jpg) no-repeat center center;
+    background-size: cover;
+}
+.photo14{
+    background: url(../img/photo14.jpg) no-repeat center center;
     background-size: cover;
 }
 #photoContents > .slick-prev{
@@ -603,12 +630,12 @@ h3{
   flex-direction: row-reverse;
 }
 
-/* massage-wrap */
-.massage-wrap{
+/* message-wrap */
+.message-wrap{
     width: 85%;
     margin: 7% auto 3% auto;
 }
-.massage_border{
+.message_border{
     width: 100%;
     height: 7px;
     background: #61B7BD;
@@ -620,12 +647,20 @@ h5{
     font-weight: bold;
     font-size: 2.3vw;
 }
-.massage p{
+.message p{
     color: #707070;
     font-size: 1.3vw;
     padding: 2.5% 4%;
     line-height: 2.1;
     font-weight: bold;
+}
+.message > .experience{
+    font-size: 1vw;
+    font-weight: lighter;
+    color:#fff;
+    width: 70%;
+    background: #A2D3D3;
+    border-radius: 30px;
 }
 /*  access-area
 --------------------------------*/
