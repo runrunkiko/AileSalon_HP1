@@ -13,6 +13,17 @@ $('#slideContents').slick({
   waitForAnimate: false,
   pauseOnFocus: false,
   pauseOnHover: false,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 //フォトギャラリー
@@ -73,4 +84,10 @@ $(function(){
   $("h1").on("click", function(){
     $("html, body").animate({scrollTop: 0 }, 800, "swing");
   });
+});
+//ハンバーガーメニュー
+$('#menuButton').on('click',function(){
+    console.log('クリックしたよ');
+    $('#menuButton').toggleClass('active');
+    $('#nav').toggleClass('active');
 });
