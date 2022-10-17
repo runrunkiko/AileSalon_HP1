@@ -31,6 +31,7 @@ body{
     line-height: 2.5;
 }
 
+
 /*  loading
 --------------------------------*/
 #loading{
@@ -46,6 +47,11 @@ body{
     align-items: center;
     z-index: 9999;
     /* display: none; */
+}
+/*  header
+--------------------------------*/
+.aile_Logo_sp{
+    display: none;
 }
 
 /*  slideshow
@@ -129,17 +135,8 @@ h1 img{
     color: #707070;
     transition: .4s;
 }
-.sns_icon{
-    /* width: 100%; */
-    display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
-}
 .sns_icon img{
     display: none;
-    /* width: 33px;
-    height: auto;
-    margin-right: 30px; */
 }
 /* ホバー時 */
 .nav-list li a:hover {
@@ -838,12 +835,25 @@ h5{
 
 /* SP版 */
 @media(max-width: 600px){
+    /*  header
+    --------------------------------*/
+    .aile_Logo_sp{
+        display: block;
+        position: relative;
+    }
+    .aile_Logo_sp > img{
+        width: 110px;
+        position: absolute;
+        z-index: 1000;
+        top: 30px;
+        left: 30px;
+    }
     /* ハンバーガーメニュー */
     .header > .menu-button{
         display: block;
         position: fixed;
-        top: 50px;
-        right: 30px;
+        top: 20px;
+        right: 20px;
         width: 70px;
         height: 70px;
         background: transparent linear-gradient(219deg, #EEB193 0%, #6CC6CB 100%) 0% 0% no-repeat;
@@ -909,6 +919,9 @@ h5{
         pointer-events: auto;
         z-index: 10000;
     }
+    .header nav.close{
+        opacity: 0;
+    }
     .header .nav-list{
         position: unset;
         display: block;
@@ -922,8 +935,10 @@ h5{
         width: 100%;
         border-radius: 0;
         margin: 0;
+        height: 100vh;
         position: fixed;
         box-shadow: unset;
+        padding-top: 30%;
     }
     .nav-list a{
         line-height: 3;
@@ -944,14 +959,20 @@ h5{
         height: auto;
         margin: 15px 10px 15px 10px;
     }
+    /* ホバー時 */
+    .nav-list li a:hover {
+        padding: 3%;
+    }
+
     /*  slideshow
     --------------------------------*/
     .slide{
         display: none;
         width: 100%;
-        margin: 150px 5px 0 5px;
+        margin: 0 5px 0 5px;
         position: relative;
         z-index: -1;
+        height: 110vh;
     }
     .slide::before{
         content: '';
@@ -971,5 +992,5 @@ h5{
 
     .aboutList .box{
     display: block;
-}
+    }
 }
