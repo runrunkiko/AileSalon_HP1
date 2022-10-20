@@ -8,14 +8,14 @@ $(window).on('load',function(){
 $('#slideContents').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2300,
   waitForAnimate: false,
   pauseOnFocus: false,
   pauseOnHover: false,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 1025,
       settings: {
         arrows: true,
         centerMode: true,
@@ -39,7 +39,7 @@ $('#photoContents').slick({
   pauseOnHover: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1025,
       settings: {
         arrows: true,
         centerMode: true,
@@ -83,6 +83,12 @@ $(function(){
 $(function(){
   $("h1").on("click", function(){
     $("html, body").animate({scrollTop: 0 }, 800, "swing");
+  });
+});
+//フッターページトップボタン
+$(function(){
+  $("#page_top").on("click", function(){
+    $("html, body").animate({scrollTop: 0 }, 600, "swing");
   });
 });
 //ハンバーガーメニュー
