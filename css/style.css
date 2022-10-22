@@ -1042,17 +1042,24 @@ h5{
         margin-bottom: 35px;
         font-size: 18px;
     }
-    
 
-
-
-    .aboutList .box{
-        display: block;
-    }
 }
 
 
 @media(max-width: 428px){
+    /*  common
+    --------------------------------*/
+    .ttl-wrap{
+        margin-top: 100px;
+    }
+    .ttl{
+        font-size: 30px;
+    }
+    .sub-ttl{
+        font-size: 14px;
+        opacity: 0.7;
+        line-height: 2;
+    }
     /*  fv-wrap
     --------------------------------*/
     .CTA1 > a > img{
@@ -1070,17 +1077,106 @@ h5{
         padding: 10%;
     }
     .article-wrap > p{
-        line-height: 2.17;
+        line-height: 1.8;
         text-align: center;
         display: block;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         font-size: 15px;
     }
     .dog1{
-        margin: 80px 0 0 0;
+        margin: 60px 0 0 0;
     }
     /* スクロールアニメーション */
     .scroll-wrap{
         margin-top: 100px;
+    }
+    /* aboutList */
+    .aboutList .box{
+        width: 90%;
+    }
+    .about-thumbnail > img{
+        display: block;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .aboutList{
+        margin-top: 50px;
+    }
+    .aboutList .box{
+        display: block;
+        margin: 0 auto;
+    }
+    .about-article{
+        padding: 0;
+        background-color: unset;
+        box-shadow: 0px 3px 6px #00000029;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 8%;
+        padding: 4% 6% 10% 6%;
+        border-radius: 0 0 20px 20px;
+    }
+    .box2 > .about-article{
+        padding:0 0 10% 0;
+    }
+    .box5 > .about-article{
+        padding: 0 0 10% 0;
+    }
+    h2{
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: bold;
+        text-align: center;
+        padding: 5% 0 5% 0;
+    }
+    .box2 > .about-article > h2{
+        padding-top: 8%;
+    }
+    .border{
+        border-bottom: unset;
+        padding-bottom: 5px;
+    }
+    .about-article p{
+        width: 100%;
+        height: auto;
+        margin-top: 1.5%;
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: center;
+        padding: 0 5%;
+    }
+    /* カラフルなブラー背景 */
+    .v1{
+        opacity: 0.6;
+        filter: blur(70px);
+        width: 500px;
+        height: 500px;
+        top: 70px;
+        right: 80px;
+    }
+    .v2{
+        opacity: 0.5;
+        filter: blur(40px);
+        width: 500px;
+        height: 500px;
+        top: 500px;
+        left: 30px;
+    }
+    .v3{
+        opacity: 0.5;
+        filter: blur(50px);
+        width: 300px;
+        height: 300px;
+        top: 1200px;
+        left: 5px;
+    }
+    .v4{
+        opacity: 0.5;
+        filter: blur(40px);
+        width: 600px;
+        height: 600px;
+        top: 1800px;
+        right: 10px;
+        z-index: -10;
     }
 }

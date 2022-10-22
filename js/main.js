@@ -69,6 +69,7 @@ $(function(){
         console.log('きたよ');
     });
 });
+
 // ページ内遷移_CTA1
 $(function(){
     $('.CTA1 a[href*="#"]').click(function(){
