@@ -28,7 +28,7 @@ $('#slideContents').slick({
 
 //フォトギャラリー
 $('#photoContents').slick({
-  autoplay: true,
+  autoplay: false,
   centerMode: true,
   arrows: true,
   centerPadding: '150px',
@@ -52,7 +52,7 @@ $('#photoContents').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '100px',
+        centerPadding: '0',
         slidesToShow: 1
       }
     }
