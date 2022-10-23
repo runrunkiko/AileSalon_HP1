@@ -45,7 +45,7 @@ body{
     flex-direction: center;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 10002;
     /* display: none; */
 }
 /*  header
