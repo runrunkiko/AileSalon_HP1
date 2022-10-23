@@ -667,16 +667,18 @@ h5{
 .message p{
     color: #707070;
     font-size: 1.3vw;
-    padding: 2.5% 4%;
+    padding: 2% 4%;
     line-height: 2.1;
     font-weight: bold;
 }
+.message > .experience > span{
+    font-weight: bold;
+}
 .message > .experience{
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: lighter;
-    color:#fff;
+    color: #707070;
     width: 70%;
-    background: #A2D3D3;
     border-radius: 30px;
 }
 /*  access-area
@@ -1044,7 +1046,6 @@ h5{
     }
     /* message-wrap */
     .message > .experience{
-        background: #61B7BD;
         border-radius: 20px;
     }
 
@@ -1383,8 +1384,6 @@ h5{
     .message > .experience{
         font-size: 2.2vw;
         width: 100%;
-        background: #61B7BD;
-        border-radius: 10px;
         margin: 5% 0;
     }
     /*  access-area
