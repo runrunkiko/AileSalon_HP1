@@ -5,25 +5,29 @@ $(window).on('load',function(){
 });
 
 //トップ画像
-$('#slideContents').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2300,
-  waitForAnimate: false,
-  pauseOnFocus: false,
-  pauseOnHover: false,
-  responsive: [
-    {
-      breakpoint: 1025,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 1
-      }
-    }
-  ]
+$(function(){
+    setTimeout(function(){
+        $('#slideContents').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2300,
+          waitForAnimate: false,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+    },4000);
 });
 
 //フォトギャラリー
