@@ -8,7 +8,7 @@ $(window).on('load',function(){
 $('#slideContents').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2300,
   waitForAnimate: false,
   pauseOnFocus: false,
@@ -28,7 +28,7 @@ $('#slideContents').slick({
 
 //フォトギャラリー
 $('#photoContents').slick({
-  autoplay: false,
+  autoplay: true,
   centerMode: true,
   arrows: true,
   centerPadding: '150px',
