@@ -1042,6 +1042,11 @@ h5{
         margin-bottom: 35px;
         font-size: 18px;
     }
+    /* message-wrap */
+    .message > .experience{
+        background: #61B7BD;
+        border-radius: 20px;
+    }
 
 }
 
@@ -1064,8 +1069,8 @@ h5{
     --------------------------------*/
     .CTA1 > a > img{
         position: fixed;
-        width: 130px;
-        height: 130px;
+        width: 125px;
+        height: 125px;
         bottom: 5px;
         left: 10px;
         z-index: 100;
@@ -1188,7 +1193,7 @@ h5{
     }
     .course-box{
         width: 69vw;
-        height: 70vw;
+        height: 65vw;
         border-radius: 30px;
         border: 0.4px solid #707070;
         margin: 10% auto;
@@ -1200,27 +1205,25 @@ h5{
     }
     .course-box > p{
         line-height: 1.9;
-        font-size: 13px;
-        padding: 6%;
+        font-size: 3.5vw;
+        padding: 3% 2% 0 2%;
     }
     .course-box > p > br{
         display: none;
     }
-    .course-box3 > p{
-        padding: 3% 6%;
+    .course-box3{
+        height: 73vw;
     }
     .course-box5{
-        margin: 0 auto;
+        height: 77vw;
     }
     .course-box5 > p{
-        font-size: 12.5px;
         line-height: 1.7;
-        padding: 1%;
     }
     .course-area > p{
         text-align: center;
         font-size: 12px;
-        padding: 15% 13% 0 17%;
+        padding: 5% 13% 0 17%;
         line-height: 1.6;
     }
     .br::before {
@@ -1303,11 +1306,8 @@ h5{
     /*  staff-area
     --------------------------------*/
     .staff-area{
-        background: #fff;
         width: 90%;
         border-radius: 20px;
-        margin: 0 auto;
-        padding-bottom: 7%;
     }
     .staff-area > .ttl-wrap{
         margin-top: 15%;
@@ -1315,19 +1315,13 @@ h5{
     }
     .staff-list{
         width: 85%;
-        margin: 0 auto;
     }
     .staff{
         display: block;
-        margin: 6% 0;
     }
     .staff-thumbnail figure{
         width: 90%;
-        height: auto;
         margin: 30% auto 0 auto;
-    }
-    .staff-thumbnail figure img{
-        width: 100%;
     }
     .staff-box p{
         margin-top: 7%;
@@ -1340,45 +1334,135 @@ h5{
         
     }
     .staff-box1{
-        position: relative;
         width: 80%;
         margin: 0 auto;
     }
     .staff-box1 > h4{
-        position: absolute;
         width: 100%;
         z-index: 2;
-        text-align: center;
-        color: #fff;
-        background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #BABABA 58%, #F2A681E5 100%) 0% 0% no-repeat padding-box;
-        font-weight: bold;
-        padding: 4% 0;
         font-size: 16px;
-        top: -330px;
+        top: -85vw;
         left: 0;
     }
     .staff-box2{
-        position: relative;
         width: 80%;
         margin: 0 auto;
     }
     .staff-box2 > h4{
-        position: absolute;
         width: 100%;
-        z-index: 2;
-        text-align: center;
-        color: #fff;
-        background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #BABABA 58%, #F2A681E5 100%) 0% 0% no-repeat padding-box;
         font-weight: bold;
-        padding: 4% 0;
         font-size: 16px;
-        top: -330px;
+        top: -85vw;
         left: 0;
     }
     .staff-box-nakagami > h4{
-        top: -300px;
+        top: -78vw;
     }
     .staff-box-pink h4{
         background: transparent linear-gradient(52deg, #6CC6CBEA 0%, #E0BDBD 58%, #E2B9B9 100%) 0% 0% no-repeat padding-box;
+    }
+    /* message-wrap */
+    .message-wrap{
+        width: 80%;
+        margin: 17% auto 3% auto;
+    }
+    .message_border{
+        height: 2px;
+    }
+    h5{
+        padding: 8% 4%;
+        font-size: 4vw;
+    }
+    .message p{
+        color: #000;
+        font-size: 2.4vw;
+        padding: 3% 4%;
+        line-height: 1.6;
+        font-weight: lighter;
+    }
+    .message > .experience{
+        font-size: 2.2vw;
+        width: 100%;
+        background: #61B7BD;
+        border-radius: 10px;
+        margin: 5% 0;
+    }
+    /*  access-area
+    --------------------------------*/
+    .map-wrap{
+        width: 80%;
+        display: block;
+    }
+    .map > iframe{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .adress{
+        padding: 5% 0 2% 0;
+        font-weight: bold;
+    }
+    .adress p{
+        font-size: 3.3vw;
+    }
+    .map-btn{
+        width: 100%;
+        border-radius: 40px;
+        padding: 6% 0;
+        margin: 10% auto;
+        font-size: 4vw;
+    }
+    /*  reservation-area
+    --------------------------------*/
+    .ttl-wrap-reserve{
+        padding: 10% 0 5% 0;
+    }
+    .ttl-reserve{
+        font-size: 30px;
+    }
+    .sub-ttl-reserve{
+        font-size: 14px;
+    }
+    .reservation-wrap{
+        border-radius: 30px;
+        width: 90%;
+    }
+    .reservation-wrap > p{
+        font-size: 3vw;
+        padding: 6% 5% 6% 5%;
+    }
+    .instagram{
+        margin-bottom: 5%;
+    }
+    .insta_icon > img{
+        width: 50%;
+    }
+    .instagram > p{
+        margin-left: -1%;
+        font-size: 3vw;
+    }
+    .web-btn{
+        width: 80%;
+        padding: 5% 4%;
+        text-align: center;
+        margin: 3% auto 9% auto;
+        font-size: 3.7vw;
+        transition: .2s;
+    }
+    .line-btn{
+        width: 80%;
+        border-radius: 50px;
+        padding: 5% 4%;
+        margin: 3% auto 9% auto;
+        font-size: 3.7vw;
+    }
+    #page_top{
+        margin: 5% 7% 5% 0;
+    }
+    #page_top img{
+        width: 13%;
+    }
+    .Copyright{
+        font-size: 2.5vw;
+        padding: 2% 4% 4% 0;
     }
 }
