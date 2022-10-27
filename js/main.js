@@ -77,8 +77,9 @@ $(function(){
 // ページ内遷移_CTA1
 $(function(){
     $('.CTA1 a[href*="#"]').click(function(){
+        var headerHight = 150;
         var elmHash = $(this).attr('href');
-        var pos = $(elmHash).offset().top;
+        var pos = $(elmHash).offset().top-headerHight;
         $('body,html').animate({scrollTop: pos}, 800);
         return false;
         console.log('きたよ');
